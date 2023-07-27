@@ -15,6 +15,21 @@
       padding-bottom: 3rem;
       color: #5a5a5a;
     }
+    .upload-image {
+      width:200px;
+      height:200px;
+      display:flex;
+      justify-content: center;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    /* Optional styling for the image */
+    .upload-image img {
+      width: 100%; /* Adjust the width of the image as needed */
+      height: auto; /* Maintain the aspect ratio */
+      display: block;
+    }
     .carousel {
       margin-bottom: 4rem;
     }
@@ -24,6 +39,7 @@
     }
     .carousel-item {
       height: 32rem;
+      background-image: url(bgimg.jpg);
     }
     .carousel-item > img {
       position: absolute;
@@ -81,14 +97,18 @@
         font-size: 3.5rem;
       }
     }
+    
+    .navbar{
+      background-color:darkblue;
+      color:white;
+    }
   </style>
   <link href="carousel.css" rel="stylesheet">
 </head>
 <body>
-
 <!-- Your content goes here, including Bootstrap components -->
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md fixed-top ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Dr Nagaraja GS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,13 +117,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About me</a>
+            <a class="nav-link active" aria-current="page" href="about_me.html">About me</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Workshops</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Experience_at_RVCE.html">Experience at RVCE</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -115,7 +138,6 @@
   </nav>
 </header>
 <main>
-
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -124,11 +146,10 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"fill="#2345"><rect width="100%" height="100%" /></svg>
         <div class="container">
           <div class="carousel-caption text-start">
-            <img src="image1.png"/>
+            <img class="images" src="image1.png"/>
             <!-- <h1>Example Headline</h1>
             <p>Some representative placeholder content for the first slide of the carousel.</p> -->
            
@@ -136,24 +157,20 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" fill="#2345"><rect width="100%" height="100%" /></svg>
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <img src="image2.png" />
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"fill="#2345"><rect width="100%" height="100%" /></svg>
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <img src="image3.png"/>
           </div>
         </div>
       </div>
@@ -175,30 +192,43 @@
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+    <div class="row" fill="#87CEEB">
+      <div class="col">
+        <svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg"></svg>
+          <div class="upload-image">
+            <img src="Photo.jpg" alt="Uploaded Image">
+          </div>
+        <h2>About Me</h2>
+        <p>Professor and Associate Dean, Dept of Computer Science and Engineering, RV College of Engineering (RVCE) Bangalore-560059, India.
+          IEEE Senior Member- ID: 93317003
+          </p>
+        <p></p>
+        <p><a class="btn btn-secondary" href="">View Details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col">
+        <svg class="bd-placeholder-img" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="upload-image">
+          <img src="image2.png" alt="Uploaded Image">
+        </div>
+        <h2>Workshops</h2>
+        <p>
+          </p>
+        <p>Conducted and Headed multiple Workshops and encouraged students to work harder for better future.</p>
+        <br><br>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <div class="col">
+        <svg class="bd-placeholder-img rounded-circle" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="upload-image">
+          <img src="image7.png" alt="Uploaded Image">
+        </div>
+        <h2>Experience at RVCE</h2>
 
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p></p>
+        <br><br><br><br><br>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
-
 
     <!-- START THE FEATURETTES -->
 
