@@ -23,22 +23,9 @@
             padding: 10px;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
         section {
             width: 100%;
+            height: 600px; /* Increased section height to 600px */
             padding: 50px;
             display: flex;
             align-items: center;
@@ -52,6 +39,8 @@
         img:hover {
             transform: scale(1.1);
         }
+
+        /* ... (existing CSS for section backgrounds, buttons, and navigation bar) ... */
 
         .section1 {
             background-color: rgba(64, 224, 208, 0.2); /* Light Turquoise 20% opacity */
@@ -73,21 +62,29 @@
             background-color: rgba(64, 224, 208, 1); /* Light Turquoise 100% opacity */
         }
 
-        .cta-button {
-            padding: 10px 20px;
-            background-color: #40e0d0; /* Light Turquoise */
+        .section6 {
+	    background-color: rgba(64, 224, 208, 1); /* Light Turquoise 100% opacity */
+            <!--background-image: linear-gradient(45deg, #553c9a, #ee4b2b);-->
             color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-top: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+            text-align: left;
+            padding: 50px;
         }
 
-        .cta-button:hover {
-            background-color: #00ced1; /* Darker shade on hover */
+        .section6 img {
+            width: 200px;
+            transition: transform 0.3s;
         }
+
+        .section6 img:hover {
+            transform: scale(1.1);
+        }
+
+        .section-text {
+            color: #333;
+            font-size: 17px;
+        }
+
+        /* ... (existing CSS for buttons and navigation bar) ... */
 
         /* Vertical Navigation Bar */
         .navbar-vertical {
@@ -112,6 +109,35 @@
             transform: scale(1.1);
             background-color: rgba(64, 224, 208, 0.9); /* Light Turquoise with 90% opacity */
         }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Added styles for headings */
+        h2 {
+            font-weight: bold;
+            background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -128,17 +154,20 @@
                         <a class="nav-link" href="#section1">Personal Info</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section2">Achievements</a>
+                        <a class="nav-link" href="#section2">Academic Qualifications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section3">Experience</a>
+                        <a class="nav-link" href="#section3">Work Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section4">Work</a>
+                        <a class="nav-link" href="#section4">Research</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#section5">Publishments</a>
                     </li>
+		    <li class="nav-item">
+                        <a class="nav-link" href="#section6">Awards And Recognition</a>
+                    </li>	
                 </ul>
             </div>
         </div>
@@ -149,37 +178,125 @@
     </header>
 
     <section class="section1" id="section1">
-        <img src="image1.jpg" alt="Image 1">
+        <img src="https://i.ibb.co/Qj1czV6/Screenshot-2023-07-28-at-7-53-52-AM.png" alt="Dr. Nagaraja G S" title="Dr. Nagaraja G S">
+        <div class="section-text">
+            <h2>&nbsp DR. NAGARAJA G S</h2><br>
+            <p>
+                &nbsp &nbsp &nbsp Professor and Associate Dean, <br>&nbsp &nbsp &nbsp Department of Computer Science and Engineering, <br>&nbsp &nbsp &nbsp RV College of Engineering (RVCE) <br>&nbsp &nbsp &nbsp Bangalore- 560059, India.<br><br>&nbsp &nbsp &nbsp Date of Birth &nbsp:&nbsp 01/05/1968<br>
+            &nbsp &nbsp &nbsp Phone No.: 080-67188204 (Dept-Office)<br>&nbsp &nbsp &nbsp Personal Number:&nbsp9880017459<br><br>
+            <b>&nbsp &nbsp &nbsp Professional Ship society Member:&nbsp IEEE, IEEE-CS, ISTE</b><br>
+            <b>&nbsp &nbsp &nbsp IEEE Senior Member- ID: 93317003</b>
+            </p>
+        </div>
     </section>
 
     <section class="section2" id="section2">
         <img src="image2.jpg" alt="Image 2">
+        <div class="section-text">
+            <h2>Academic Qualifications</h2><br>
+            <p>
+                <ul>
+                    <li><b>Bachelor of Engineering (B.E.)</b> in Computer Science and Engineering, Bangalore University, India, 1991.</li><br>
+                    <li><b>Master of Engineering (M.E.),  Master of Engineering Management</b> from, Mysore University, India, 1996.</li><br>
+                    <li><b>Doctor of Philosophy (Ph.D.)</b> in Computer Science and Engineering from Dr. MGR University, Chennai, India, 2011.</li><br>
+                    <li><b>CCCNA Certified instructor</b> from RVCE CISCO academy-2012.</li><br>
+                </ul>
+            </p>
+        </div>
     </section>
 
     <section class="section3" id="section3">
         <img src="image3.jpg" alt="Image 3">
+        <div class="section-text">
+            <h2>Work Experience</h2><br>
+            <p>
+                30+ Years of Teaching Experience,<br>19+Years of Research Experience,<br>6+ Years of Skill development experience in CCNA  for UG / PG Students, <br>Intel FPGA and SoC’s instructor.<br>
+                <br><b>Positions Held</b> &nbsp:&nbsp <ul><li>Lecturer,</li> <li>Assistant Professor,</li> <li>Associate Professor,</li> <li>Professor,</li> <li>Associate Dean</li></ul> <br>in Department Computer Science Engineering, R. V. College Of Engineering, Bangalore - 560059
+
+            </p>
+        </div>
     </section>
 
     <section class="section4" id="section4">
-        <img src="image4.jpg" alt="Image 4">
+        <img src="https://i.ibb.co/H7369HW/Screenshot-2023-07-28-at-8-08-49-AM.png" alt="IEEE Connect 2023" title="Technical chair at IEEE Connect 2023">
+        <div class="section-text">
+            <h2>Research</h2>
+            <p>
+                <ul>
+                    <li>Computer Networks, Networks Management, Routing and Switching, Cloud Computing, Distributed computing, IoT and Security.</li>
+                    <li>Distributed Systems, Wireless Sensor Networks, Parallel Processing, Storage Management, Multimedia Communications, Computer Organization and Architecture, Precision Agriculture.</li>
+                    <li><b>Projects Supervised &nbsp:</b>&nbsp UG-50+, PG-50+</li>
+                    <li><b>Research Students &nbsp:</b>&nbsp <ul><li>05 - Students from VTU</li><li>03 - Students from Jain University</li><li>06 - Presently Guiding from VTU</li></ul>
+                    </li>
+                </ul><br>
+                <b>&nbspResearch Projects Undertaken:</b><br><br>
+                <ul>
+                    <li>UGC granted financial support for research project under the category of Major Research Project, 2012-2015.</li>
+                    <li><b><i>"Solar Ironing Cart"</i></b> sanctioned by the <b>National Institute of advanced studies IISC</b>, collaboratively with the EEE Department for the academic year-2020.</li>
+                    <li>Collaborative development project on <b><i>Silkworm Seed production</i></b> sanctioned by <b>Central Silk Board-2021.</b></li>
+                    <li>Patent research article was published titled <b><i>“A system for estimating the inherent parallelism and speedup of sequential programs”</i></b> (10) DE 20 2022 104 088 U1 2022.09.0.</li><hr>
+                </ul>
+            </p>
+        </div>
     </section>
 
     <section class="section5" id="section5">
         <img src="image5.jpg" alt="Image 5">
+        <div class="section-text">
+            <h2>Publishments</h2>
+            <p>
+                Some of the notable publication include ...
+                <ul>
+                    <li>Dr. Nagaraja G S, B Mithra Varun, P V Koundinya, Yashas M S, <b><i>"Prediction of Diabetes Risk based on Machine Learning Algorithms"</i></b>, International Conference on Artificial Intelligence and Machine Learning in Applied Biotechnology (AIMLBIO), 8-10 Dec 2022, RVCE, Bangalore, India.</li>
+                    <li>Vanishree K, Kedar Bhandarkar, Sudhanva T Manur, Syed Farhan, Leela Ganesh, Dr. G S Nagaraja, <b><i>"LoRa based Smart Agriculture Monitoring and Automated Irrigation System"</i></b>, International Conference on Artificial Intelligence and Machine Learning in Applied Biotechnology (AIMLBIO), 8-10 Dec 2022, RVCE, Bangalore, India.</li>
+                    <li>Vanishree K, Dr. Nagaraja G S, <b><i>"Framework Modelling for Effective Precision Agriculture using Predictive Analytics"</i></b>, International Conference on Artificial Intelligence and Machine Learning in Applied Biotechnology (AIMLBIO), 8-10 Dec 2022, RVCE, Bangalore, India.</li>
+                    <li>G S Nagaraja, Santosh N, Pooja J S, <b><i>"Phishing URL Detection using Machine Learning"</i></b>, International Conference on Artificial Intelligence and Machine Learning in Applied Biotechnology (AIMLBIO), 8-10 Dec 2022, RVCE, Bangalore, India.</li>
+                    <li>Reshma Jakabal, Dr. Nagaraja G S,<b><i> "A Solution for Prediction and Tracking of Alzheimer Disease using Secure and Energy Efficient Internet of-Things"</i></b>, 4th International Conference on Cybernetics, Cognition and Machine Learning Application (ICCCMLA), IEEE Conference #56841 held in Goa from 8th - 9th October 2022, India.</li>
+                    <li>Shankaramma, Nagaraja G.S, "Methods of Storage Intrusion Mitigation with Data transport Security Tunnels", 7th International Conference on Microelectronics, Computing & Communication Systems (MCCS-2022), Jharkhand, India during July. 9 -10th, 2022.</li>
+                    <li>Shreyas Srinath, Nagaraja G S, Ramesh Shahabadkar, "A detailed analysis of lightweight Cryptographic techniques on Internet-of-Things", 5th Edition IEEE International Conference on Computational Systems and Information Technology for Sustainable Solution(CSITSS-2021), 16-18 December-2021, pp.155-160.</li>
+                    <li> Mahesh Subray Hegde, Sukrutha C Basappa, Nagaraja G.S, "Smart dry and wet waste management using IoT", 5th Edition IEEE International Conference on Computational Systems and Information Technology for Sustainable Solution(CSITSS-2021), 16-18 December-2021, pp.230-233.</li><hr>
+                </ul>
+            </p>
+        </div>
     </section>
 
-    <footer>
-        <p>Contact me: </p> <a href="mailto: nagarajgs@rvce.edu.in" styles="color:white;"> nagarajgs@rvce.edu.in</a>
-        <button class="cta-button">Contact Me</button>
-    </footer>
+    <!-- New Section: Blank Section 6 -->
+    <section class="section6" id="section6">
+        <img src="image6.jpg" alt="Image 6">
+        <div class="section-text">
+            <h2>Awards and Regonition</h2>
+            <p>
+                <ul>
+			<li>ISTE presented a National Award "Rajarambapu Patil" for promising engineering teacher for creative work done in technical education 2018.</li>
+			<li>Cisco presented an Advanced Level Instructor Excellence recognition (2013, 2015) for his contributions RVCE-CISCO networking academy, Completed five years of service for RVCE-CISCO academy.</li>
+			<li>Worked as General chair of the IEEE International Conference on Conference on Computational Systems for Information Technology for Sustainable Solution for the year 2016 and technical chair for the years 2017, 2019, 2021 and 2022.</li>
+			<li>Also lead the Conference ICDDS-2022 and AIMLBIO-2022. Also working as Technical chair for IEEE Connect 2023 and ICDDS-2023 Conferences.</li>		
+			<li>Presently working as IEEE-CS ExCom member for the year 2023, worked as vice chair of IEEE-CS ExCom for the year 2022 and also worked as exe com Member for the years 2020 and 2021.</li>
+		</ul>	
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p style="font-size:20px;">Contact me:</p>
+        <div class="footer-links">
+            <a href="mailto:nagarajags@rvce.edu.in" target="_blank">nagarajags@rvce.edu.in</a><hr>
+            <a href="https://in.linkedin.com/in/nagaraja-g-s-610887191" style="text-align:left;" title="link to LinkedIn Profile" target="_blank">LinkedIn</a><hr>
+            <a href="https://rvce.edu.in/cs-nagarajags" title="Link to RVCE portfolio" target="_blank">RVCE Handle</a> <hr>
+        </div>
+       
+    </div>
 
     <!-- Vertical Navigation Bar -->
     <nav class="navbar-vertical">
-        <a href="#section1">Personal Info</a>
-        <a href="#section2">Achievements</a>
-        <a href="#section3">Experience</a>
-        <a href="#section4">Work</a>
-        <a href="#section5">Publishments</a>
+        <a href="#section1" title="Navigate to Personal Information">Personal Info</a>
+        <a href="#section2" title="Navigat to Academic Qualification">Academic Qualifications</a>
+        <a href="#section3" title="Navigate to Work Experience">Work Experience</a>
+        <a href="#section4" title="Navigate to Research">Research</a>
+        <a href="#section5" title="Navigate to Publishments">Publishments</a>
+        <!-- Add link for new Section 6 -->
+        <a href="#section6" title="Navigate to New Section">Awards and Recognition</a>
     </nav>
 
     <!-- Add Bootstrap JS (optional, for certain components) -->
